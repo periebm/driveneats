@@ -1,0 +1,194 @@
+body{
+    background-color: #E5E5E5;
+    font-family: "Roboto", sans-serif;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+/*---- Menu --------------------------*/
+
+.menu{
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.menu div{
+    width: 614px;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    color: white;
+    padding-top: 3px;
+    margin-left: 21px;
+}
+
+h2{
+    font-weight: 400;
+    font-size:18px;
+    line-height: 21px;
+    color: white;
+    margin-left: 21px;
+}
+
+/*---- Conteudo --------------------------*/
+
+.main-container{
+    max-width: 614px;
+    height: 800px;
+    margin: 123px auto 108px auto;
+}
+
+.container-pedido{
+    margin-left: 21px;
+}
+
+h3{
+    font-family: "Righteous", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+}
+
+.itens{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 27px;
+
+    width: 100%;
+
+
+    overflow-x: scroll;
+
+}
+
+.item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-right: 16px;
+    border: 4px solid #31b72f00 ;
+    border-radius: 9px;
+    filter: drop-shadow(0px 0px 10px -4px rgba(0, 0, 0, 0.25));
+    flex: 0 0 172px;
+}
+
+.comida{
+    height: 216px;
+}
+
+.select-border{
+    border: 4px solid #32B72F;
+}
+
+.item img{
+    width: 144px;
+    padding-top: 18px;
+}
+
+.item div{
+    width: 144px;
+    margin-top: 8px;
+}
+
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 8px;
+
+}
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.bebida{
+    height: 202px;
+}
+
+.bebida p{
+    margin-bottom: 9px;
+}
+
+.sobremesa{
+    height: 197px;
+}
+
+/*---- Rodape --------------------------*/
+.rodape{
+    height: 72px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+
+    background-color: white;
+}
+
+.rodape div{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rodape button{
+    background-color: #CBCBCB;
+    height: 61px;
+    width: 364px;
+    
+    padding: 0px 70px 0px 70px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+.buttonReady{
+    background-color: #32B72F;
+}
+
+.buttonReady:active{
+    background-color: #289b26
+}
