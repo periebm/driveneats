@@ -1,3 +1,6 @@
+let prato, bebida, sobremesa;
+let price_prato, price_bebida, price_sobremesa;
+
 function selectPrato(item){
     checkSelection('.comida');
 
@@ -5,6 +8,10 @@ function selectPrato(item){
 
     item.classList.add("select-border");
     icon.classList.remove('hide');
+
+    prato = item.querySelector('h4').innerHTML;
+
+    checkSend();
 }
 
 function selectBebida(item){
@@ -14,6 +21,11 @@ function selectBebida(item){
 
     item.classList.add("select-border");
     icon.classList.remove('hide');
+
+    bebida = item.querySelector('h4').innerHTML;
+    console.log(bebida);
+
+    checkSend();
 }
 
 function selectSobremesa(item){
@@ -23,6 +35,11 @@ function selectSobremesa(item){
 
     item.classList.add("select-border");
     icon.classList.remove('hide');
+
+    sobremesa = item.querySelector('h4').innerHTML;
+    console.log(sobremesa);
+
+    checkSend();
 }
 
 function checkSelection(selector){
@@ -31,4 +48,16 @@ function checkSelection(selector){
         botAnt.classList.remove("select-border");
         botAnt.querySelector(`${selector} ion-icon`).classList.add("hide");
     }
+}
+
+function checkSend(){
+    if((prato !== undefined) && (bebida !== undefined) && (sobremesa !== undefined)){
+        const but = document.querySelector(".rodape button");
+        but.innerHTML = "Fechar pedido";
+        but.disabled = false;
+    }
+}
+
+function ativo(){
+    window.open("https://www.w3schools.com/jsref/jsref_tofixed.asp")
 }

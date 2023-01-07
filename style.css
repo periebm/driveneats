@@ -195,14 +195,14 @@ h5{
     color: white;
     border-radius: 50px;
     border: none;
-}
 
-.buttonNotReady {
-    background-color: #CBCBCB;
-}
-.buttonReady{
     background-color: #32B72F;
 }
+
+.rodape button:disabled{
+    background-color: #CBCBCB;
+}
+
 
 .buttonReady:active{
     background-color: #289b26
