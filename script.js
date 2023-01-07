@@ -96,12 +96,18 @@ function ativo(){
 }
 
 function pedir(){
-    const pedido =`Olá, gostaria de fazer o pedido:
-    - Prato: ${prato}
-    - Bebida: ${bebida}
-    - Sobremesa: ${sobremesa}
-    Total: R$ ${total_price }`
-    
+    const nome = prompt("Insira seu Nome: ");
+    const end = prompt("Insira seu Endereço");
+    const pedido =
+`Olá, gostaria de fazer o pedido:
+- Prato: ${prato}
+- Bebida: ${bebida}
+- Sobremesa: ${sobremesa}
+Total: R$ ${total_price }
+
+Nome: ${nome}
+Endereço: ${end}`;
+
     const enconded = encodeURIComponent(pedido);
     window.open("https://wa.me/5547992553527?text="+enconded);
 }
