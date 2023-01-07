@@ -24,134 +24,154 @@
         <div class="container-pedido">
             <h3> Primeiro, seu prato </h3>
             <div class="itens comida">
-                <div class="item">
+                <div onclick="selectPrato(this)" class="item">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div>
                         <h4>Frango Yin Yang</h4>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h5> R$ 14,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
-
-                <div class="item select-border">
+    
+                <div onclick="selectPrato(this)" class="item">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div>
                         <h4>Frango Yin Yang</h4>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h5> R$ 14,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectPrato(this)" class="item">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div>
                         <h4>Frango Yin Yang</h4>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h5> R$ 14,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectPrato(this)" class="item">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div>
                         <h4>Frango Yin Yang</h4>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h5> R$ 14,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-
+    
         </div>
-
+    
         <div class="container-pedido">
             <h3> Agora sua bebida </h3>
             <div class="itens bebida">
-                <div class="item">
+                <div onclick="selectBebida(this)"  class="item">
                     <img src="./img/coca-cola.png" alt="">
                     <div>
                         <h4>Coca-Cola</h4>
                         <p>Lata 350ml</p>
                         <h5> R$ 4,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
+    
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectBebida(this)" class="item">
                     <img src="./img/coca-cola.png" alt="">
                     <div>
                         <h4>Coca-Cola</h4>
                         <p>Lata 350ml</p>
                         <h5> R$ 4,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
+    
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectBebida(this)" class="item">
                     <img src="./img/coca-cola.png" alt="">
                     <div>
                         <h4>Coca-Cola</h4>
                         <p>Lata 350ml</p>
                         <h5> R$ 4,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
+    
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectBebida(this)" class="item">
                     <img src="./img/coca-cola.png" alt="">
                     <div>
                         <h4>Coca-Cola</h4>
                         <p>Lata 350ml</p>
                         <h5> R$ 4,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-
+    
         </div>
-
+    
         <div class="container-pedido">
             <h3> Por fim, sua sobremesa </h3>
             <div class="itens sobremesa">
-                <div class="item">
+                <div onclick="selectSobremesa(this)" class="item">
                     <img src="./img/pudim.png" alt="">
                     <div>
                         <h4>Pudim</h4>
                         <p>Apenas pudim</p>
                         <h5> R$ 7,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
+    
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectSobremesa(this)" class="item">
                     <img src="./img/pudim.png" alt="">
                     <div>
                         <h4>Pudim</h4>
                         <p>Apenas pudim</p>
                         <h5> R$ 7,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
+    
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectSobremesa(this)" class="item">
                     <img src="./img/pudim.png" alt="">
                     <div>
                         <h4>Pudim</h4>
                         <p>Apenas pudim</p>
                         <h5> R$ 7,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
-
-                <div class="item">
+    
+                <div onclick="selectSobremesa(this)" class="item">
                     <img src="./img/pudim.png" alt="">
                     <div>
                         <h4>Pudim</h4>
                         <p>Apenas pudim</p>
                         <h5> R$ 7,90 </h5>
                     </div>
+                    <ion-icon class="hide" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-
+    
         </div>
     </div>
 
     <div class="rodape">
         <div>
-            <button> Selecione os 3 itens para fechar o pedido </button>
+            <button class="buttonNotReady"> Selecione os 3 itens para fechar o pedido </button>
         </div>
     </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
